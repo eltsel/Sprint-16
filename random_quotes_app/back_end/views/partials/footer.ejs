@@ -1,0 +1,15 @@
+<footer>All Rights &copy; reserved to me, 2022</footer>
+<script>
+  try {
+    document
+      .querySelector(".delete")
+      .addEventListener("click", async function (e) {
+        let id = e.target.dataset.doc;
+        console.log(id)
+        let res = await fetch(`/quotes/${id}`, {
+          method: "DELETE",
+        });
+        location.href = "/";
+      });
+  } catch (error) {}
+</script>

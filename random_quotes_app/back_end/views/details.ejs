@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html lang="eng">
+  <%- include('./partials/header.ejs') %>
+  <body>
+    <%- include('./partials/navbar.ejs') %>
+    <div class="details content">
+        <h2><%= quote.author %></h2>
+        <p><%= quote.body %></p>
+        <a  class="delete" data-doc="<%= quote._id %>" >Delete</a>
+    </div>
+    <%- include('./partials/footer.ejs') %>
+  </body>
+</html>

@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+    <%- include('./partials/header.ejs') %>
+<body>
+    <%- include('./partials/navbar.ejs') %>
+    <form action="/quotes/create" method="post">
+        <label for="author">Quote author:</label>
+        <input type="text" name="author" id="author" required />
+        <label for="snippet">Quote synopsis:</label>
+        <input type="text" name="snippet" id="snippet" required />
+        <label for="body">Quote body:</label>
+        <input type="text" name="body" id="body" required />
+        <button>Submit</button>
+    </form>
+    <%- include('./partials/footer.ejs') %>
+</body>
+</html>
